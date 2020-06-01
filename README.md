@@ -22,3 +22,5 @@ El juego posee tres tipos de vehículos distintos:
 - Súper
 
 Cada tipo de vehículo posee una dificultad distinta (y así distintos tiempos de vuelta), múltiples colores por cada coche, cuatro pistas (de manera inicial), múltiples ambientes, sonidos, fantasma de vuelta rápida y algunos efectos gráficos.
+
+
