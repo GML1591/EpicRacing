@@ -5,3 +5,5 @@ Epic Racing es un juego en 2D _top view_ de carreras de coches desarrollado en p
   <img alt="Epic Racing" src="https://github.com/GML1591/Epic-Racing/blob/master/appicon.ico" width="200px" height="200px" />
   <br /><br />
   Epic Racing</h1>
+  
+  <div align="center"><a href="https://github.com/GML1591/Epic-Racing"><img alt="@ppizarror" src="https://res.ppizarror.com/badges/autor.svg" /></a>
