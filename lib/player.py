@@ -74,7 +74,7 @@ STATE_CORRECT = "SIG"  # Indica que el jugador avanzó correctamente en la pista
 STATE_INVALIDPOS = "INVALIDPOS"  # Indica si se salió de la pista
 STATE_NEWLAP = "NEWLAP"  # Indica que el jugador completó la vuelta anterior
 STATE_NULL = "NONE"  # Indica ausencia de estado
-STATE_OFFROAD = "OFFROAD"  # Indica si el auto se salio de la pista
+STATE_OFFROAD = "OFFROAD"  # Indica si el cochese salio de la pista
 STATE_WRONGWAY = "WRONGWAY"  # Indica que el jugador conduce en sentido inverso a la orientación de la pista
 TIMETO_SHOW_FRENADO = 0.3  # Tiempo que se debe presionar el botón de frenado para mostrar las marcas en el asfalto
 TRACK_NOT_DEFINED = "$notdefined$"  # Pista no definida
@@ -299,9 +299,9 @@ class Player(object):
 
         # se definen variables independientes
         self.acel = []  # Aceleracion del auto
-        self.agarre = 0  # Agarre del auto al suelo (para las curvas)
-        self.angle = angle % 360  # Angulo de rotacion del auto en radianes
-        self.automatic = automatic  # Transmision del auto automatica/manual
+        self.agarre = 0  # Agarre del cocheal suelo (para las curvas)
+        self.angle = angle % 360  # Angulo de rotacion del cocheen radianes
+        self.automatic = automatic  # Transmision del cocheautomatica/manual
         self.browser = browser  # Navegador web
         self.cambio = 0  # Cambio del vehiculo
         self.defaultAngle = angle % 360  # Ángulo por defecto
@@ -334,7 +334,7 @@ class Player(object):
         self.maxvel = 0  # Velocidad maxima del auto
         self.maxvelkmh = 0  # Velocidad máxima en kilómetros por hora
         self.nextTrack = TRACK_NOT_DEFINED  # Nombre de la siguiente pista a jugar
-        self.playable = playable  # Define si se puede controlar al auto o no
+        self.playable = playable  # Define si se puede controlar al cocheo no
         self.pos_center = (0, 0)  # Posición del centro
         self.posrueda_1 = (0, 0)  # Posición rueda superior derecha
         self.posrueda_2 = (0, 0)  # Posición rueda superior izquierda
@@ -413,7 +413,7 @@ class Player(object):
 
     def acelerate(self, t):
         """
-        Acelera el auto (modifica la aceleración).
+        Acelera el coche(modifica la aceleración).
         :param t: Tiempo t
         :return: void
         """
@@ -446,12 +446,12 @@ class Player(object):
 
     def check_track(self):
         """
-        Comprueba que el auto esté en una cierta pista del mapa y retorna el indice de la pista colisionada.
+        Comprueba que el cocheesté en una cierta pista del mapa y retorna el indice de la pista colisionada.
         :return: indice entre -1 y inf+
         """
         # Posición relativa en el mapa
         (pos_x, pos_y) = self.get_relative_pos()
-        # Se recorre toda la pista buscando la pista a la cual el auto está dentro
+        # Se recorre toda la pista buscando la pista a la cual el cocheestá dentro
         index = 0
         for track in self.logic_track:
             if track[0][0] <= pos_x <= track[1][0] and track[0][1] <= pos_y <= \
@@ -463,13 +463,13 @@ class Player(object):
 
     def check_track_index(self, index):
         """
-        Compreba que el auto esté en una región en particular del cirguito.
+        Compreba que el cocheesté en una región en particular del cirguito.
         :param index: Indice que representa la posición en la pista
         :return: booleano True/False
         """
         # Posición relativa en el mapa
         (pos_x, pos_y) = self.get_relative_pos()
-        # Se recorre toda la pista buscando la pista a la cual el auto está dentro
+        # Se recorre toda la pista buscando la pista a la cual el cocheestá dentro
         if index < self.trackSize:
             track = self.logic_track[index]
             if track[0][0] <= pos_x <= track[1][0] and track[0][1] <= pos_y <= \
@@ -480,7 +480,7 @@ class Player(object):
 
     def clear(self, sound_idle=False):
         """
-        Limpia todas las variables y deja el auto en la posición y angulos originales. (al cambiar un mapa)
+        Limpia todas las variables y deja el cocheen la posición y angulos originales. (al cambiar un mapa)
         :param sound_idle: Indica si se deja el sonido del motor en indle
         :return: void
         """
@@ -578,7 +578,7 @@ class Player(object):
 
     def draw(self, surface, t, update, window, **kwargs):
         """
-        Dibuja el auto. Esto basicamente aplica transformaciones al auto como rotacion, etc.
+        Dibuja el auto. Esto basicamente aplica transformaciones al cochecomo rotacion, etc.
         :param surface: Superficie de dibujo
         :param t: Tiempo t
         :param update: Indica si actualizar los parámetros fisicos del auto
@@ -1183,7 +1183,7 @@ class Player(object):
 
     def return_to_track(self):
         """
-        Retornar el auto a la pista.
+        Retornar el cochea la pista.
         :return: void
         """
         self.angle = self.lastIndexTrackAng
@@ -1201,7 +1201,7 @@ class Player(object):
         :param controller: Controlador del programa
         :return: void
         """
-        if controller:  # Si se mueve el auto mediante el controlador
+        if controller:  # Si se mueve el cochemediante el controlador
             actual_vel = self.get_vel()
             # Si se esta bajo la maxima velocidad de rotacion ->creciente
             if MINROTVEL < actual_vel < self.maxrotvel * self.agarre:
@@ -1263,7 +1263,7 @@ class Player(object):
     # noinspection PyShadowingNames
     def set_default_pos(self, pos):
         """
-        Definir la posición inicial del auto en la pista.
+        Definir la posición inicial del cocheen la pista.
         :param pos: Posición (x,y) en la pista
         :return: void
         """
