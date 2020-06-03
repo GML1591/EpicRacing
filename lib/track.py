@@ -58,11 +58,11 @@ class Maptrack(object):
                 scoreconfig, username, tracktitle, game_config, browser,
                 **kwargs):
         """
-        Función que añade un auto al modelo.
-        :param _type: Tipo de auto
-        :param texture: Textura del auto
+        Función que añade un coche al modelo.
+        :param _type: Tipo de coche
+        :param texture: Textura del coche
         :param automatic: Define si la transmisión es automático/manual
-        :param angle: Ángulo inicial del auto
+        :param angle: Ángulo inicial del coche
         :param player: Indica si es jugable o AI
         :param logic_track: Entidades lógicas de la pista
         :param sounds: Sonidos de la pista
