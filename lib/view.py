@@ -246,13 +246,13 @@ class View(object):
                 # Se dibuja el jugador
                 if self.show_player:
                     self.map.get_player().collide(self.screen, time)
-                    message = self.map.get_player().draw(self.screen, time, # dibuja el jugador (auto)
+                    message = self.map.get_player().draw(self.screen, time, # dibuja el jugador (coche)
                                                          True, self.window,
                                                          draw_ruedas=self.show_ruedas,
                                                          show_ghost=self.show_ghost)
                 else:
                     message = STATE_NULL
-                # Se dibujan las decoraciones, si dibuja las decoraciones primero y despues el auto entonces se puede ver que el auto "flota" sobre las mismas
+                # Se dibujan las decoraciones, si dibuja las decoraciones primero y despues el cocheentonces se puede ver que el coche"flota" sobre las mismas
                 for decoration in self.map.get_decorations():
                     decoration.draw(self.screen, self.window, camera_pos)
                 # Se dibuja la ui
@@ -480,7 +480,7 @@ class View(object):
                                   self.resultsScreenPos[1] + 62),
                                  (self.resultsScreenPos[0] + 433,
                                   self.resultsScreenPos[1] + 399))
-                # Tipo de auto
+                # Tipo de coche
                 self.screen.blit(
                     self.resultsFontTitleSubtl2.render(self.lang.get(42), 1,
                                                        COLOR_VELOCIMETER),
