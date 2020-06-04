@@ -20,7 +20,7 @@ Cada tipo de vehículo posee una dificultad distinta (y así distintos tiempos d
   <img alt="Epic Racing" src="https://github.com/GML1591/fotos/blob/master/coche1.png" width="750px" height="400px" />
   <br /><br />
   
-  <img alt="Epic Racing" src="https://github.com/GML1591/EpicRacing/blob/master/coche2.png" width="750px" height="400px" />
+  <img alt="Epic Racing" src="https://github.com/GML1591/fotos/blob/master/coche2.png" width="750px" height="400px" />
   <br /><br />
   
   <img alt="Epic Racing" src="https://github.com/GML1591/fotos/blob/master/coche3.png" width="750px" height="400px" />
