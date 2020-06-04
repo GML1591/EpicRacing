@@ -12,23 +12,23 @@ El juego posee tres tipos de vehículos distintos:
 Cada tipo de vehículo posee una dificultad distinta (y así distintos tiempos de vuelta), múltiples colores por cada coche, cuatro pistas (de manera inicial), múltiples ambientes, sonidos, fantasma de vuelta rápida y algunos efectos gráficos.
 
 <h1 align="center">
-  <img alt="Epic Racing" src="https://github.com/GML1591/EpicRacing/blob/master/manual3.png" width="400px" height="150px" />
+  <img alt="Epic Racing" src="https://github.com/GML1591/fotos/blob/master/manual3.png" width="400px" height="150px" />
   <br /><br />
   Epic Racing</h1>
   
 
-  <img alt="Epic Racing" src="https://github.com/GML1591/EpicRacing/blob/master/coche1.png" width="750px" height="400px" />
+  <img alt="Epic Racing" src="https://github.com/GML1591/fotos/blob/master/coche1.png" width="750px" height="400px" />
   <br /><br />
   
   <img alt="Epic Racing" src="https://github.com/GML1591/EpicRacing/blob/master/coche2.png" width="750px" height="400px" />
   <br /><br />
   
-  <img alt="Epic Racing" src="https://github.com/GML1591/EpicRacing/blob/master/coche3.png" width="750px" height="400px" />
+  <img alt="Epic Racing" src="https://github.com/GML1591/fotos/blob/master/coche3.png" width="750px" height="400px" />
   <br /><br />
   
   Adicionalmente tras cada vuelta el puntaje obtenido es subido a una plataforma online de puntajes, permitiendo así una mayor competividad con el resto de los jugadores alrededor del mundo:
   
-  <img alt="Epic Racing" src="https://github.com/GML1591/EpicRacing/blob/master/scoreboard.png" width="750px" height="400px" />
+  <img alt="Epic Racing" src="https://github.com/GML1591/fotos/blob/master/scoreboard.png" width="750px" height="400px" />
   <br /><br />
 
 ## Requisitos
