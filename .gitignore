@@ -26,12 +26,6 @@ Thumbs.db
 # Hashing
 .hash
 
-# Exe files
-*.exe
-
-# Photoshop files
-*.psd
-
 # Build folders
 build/
 dist/
