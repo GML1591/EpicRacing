@@ -7,7 +7,7 @@ Epic Racing es un juego en 2D _top view_ de carreras de coches desarrollado en p
   Epic Racing</h1>
   
   
-  <p align="center">Juego en 2D de carreras de autos enteramente desarrollado en python-pygame</p>
+  <p align="center">Juego en 2D de carreras de coches enteramente desarrollado en python-pygame</p>
 
 ## Introducción
 
