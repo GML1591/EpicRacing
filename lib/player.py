@@ -1,12 +1,9 @@
 # coding=utf-8
 """
 PLAYER
-Maneja lo que es un auto, sus texturas, propiedades y manejo lógico
+Maneja lo que es un coche, sus texturas, propiedades y manejo lógico
 Maneja la comunicación con el servidor para el caso de los marcadores.
 
-Game template
-Autor: GEORGIANA M. LOHAN
-Fecha: Marzo 2020
 """
 
 from __future__ import print_function

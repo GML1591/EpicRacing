@@ -2,10 +2,6 @@
 """
 TRACK
 Permite crear una pista, posee tanto decoraciones como coches.
-
-Game template
-Autor: GEORGIANA M. LOHAN
-Fecha: Marzo 2020
 """
 
 # Importación de librerías
@@ -39,7 +35,7 @@ class Maptrack(object):
         self.background = None  # Fondo de las pistas
         self.backgroundSize = ()  # Tamaño del fondo
         self.decorations = []  # Decoraciones del juego
-        self.enemies = []  # Autos de los enemigos
+        self.enemies = []  # COhes de los enemigos
         self.images = {}  # Imágenes propias de cada pista
         self.laps = 0  # Define el numero de vueltas maximas a ganar
         self.mapLimits = []  # Coordenadas maximas del mapa
